@@ -1,0 +1,21 @@
+INFO  08.06.2024 08:27:41  Trying to initialize repositories from: \n    /home/enigma/Desktop/s(a)elor/cms/magnolia-community-demo-webapp-6.2.45-tomcat-bundle/magnolia-6.2.45/apache-tomcat-9.0.89/webapps/magnoliaAuthor/WEB-INF/bootstrap/author\n    /home/enigma/Desktop/s(a)elor/cms/magnolia-community-demo-webapp-6.2.45-tomcat-bundle/magnolia-6.2.45/apache-tomcat-9.0.89/webapps/magnoliaAuthor/WEB-INF/bootstrap/common
+INFO  08.06.2024 08:27:41  Repository [dam] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [keystore] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [contacts] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [usergroups] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [magnolia-mgnlSystem] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [scripts] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [tours] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [website] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [magnolia-mgnlVersion] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [userroles] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [profiles] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [users] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [tasks] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [imaging] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [category] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [rss] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [default] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [resources] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [messages] has been initialized.
+INFO  08.06.2024 08:27:41  Repository [config] has been initialized.

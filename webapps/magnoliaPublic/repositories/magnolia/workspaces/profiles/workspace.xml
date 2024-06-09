@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><Workspace name="profiles">
+    
+    <FileSystem class="org.apache.jackrabbit.core.fs.local.LocalFileSystem">
+        <param name="path" value="${wsp.home}/default"/>
+    </FileSystem>
+
+<!--    <PersistenceManager class="org.apache.jackrabbit.core.persistence.bundle.H2PersistenceManager">-->
+<!--        <param name="url" value="jdbc:h2:${wsp.home}/db;AUTO_SERVER=TRUE"/>-->
+<!--        <param name="schemaObjectPrefix" value="pm_${wsp.name}_"/>-->
+<!--    </PersistenceManager>-->
+
+    <PersistenceManager class="org.apache.jackrabbit.core.persistence.bundle.MySqlPersistenceManager">
+        <param name="url" value="jdbc:mysql://localhost:3306/greenstock_cms?serverTimezone=UTC"/>
+        <param name="driver" value="com.mysql.cj.jdbc.Driver"/>
+        <param name="user" value="root"/>
+        <param name="password" value="Qwerty123"/>
+        <param name="schemaObjectPrefix" value="pm_${wsp.name}_"/>
+    </PersistenceManager>
+    
+    <WorkspaceSecurity>
+                      
+        
+        <AccessControlProvider class="info.magnolia.cms.core.MagnoliaAccessProvider"/>
+                    
+    
+    </WorkspaceSecurity>
+          
+
+</Workspace>

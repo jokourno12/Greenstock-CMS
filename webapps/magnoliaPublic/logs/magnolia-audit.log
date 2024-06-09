@@ -1,0 +1,2 @@
+08.06.2024 23:55:23, security, superuser, 127.0.0.1, Possible CSRF Attack, CSRF token mismatched while user 'superuser' attempted to access url '/travel/members/login.html'.
+08.06.2024 23:55:30, security, superuser, 127.0.0.1, Possible CSRF Attack, CSRF token mismatched while user 'superuser' attempted to access url '/travel/members/login.html'.

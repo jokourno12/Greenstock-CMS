@@ -1,0 +1,1403 @@
+08-Jun-2024 08:26:28.633 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 08:26:47.310 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 08:50:45.351 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [default] in context with path [/magnoliaAuthor] threw exception
+	java.lang.RuntimeException: org.apache.catalina.connector.ClientAbortException: java.io.IOException: Broken pipe
+		at info.magnolia.module.cache.filter.CacheFilter.doFilter(CacheFilter.java:178)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.i18n.I18nContentSupportFilter.doFilter(I18nContentSupportFilter.java:85)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.virtualuri.VirtualUriFilter.doFilter(VirtualUriFilter.java:108)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.RangeSupportFilter.doFilter(RangeSupportFilter.java:79)
+		at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.security.BaseSecurityFilter.doFilter(BaseSecurityFilter.java:57)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cors.AbstractCorsFilter.doFilter(AbstractCorsFilter.java:77)
+		at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59)
+		at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:79)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.security.SecurityCallbackFilter.doFilter(SecurityCallbackFilter.java:85)
+		at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.security.LogoutFilter.doFilter(LogoutFilter.java:110)
+		at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.module.site.filters.SiteMergeFilter.doFilter(SiteMergeFilter.java:115)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MultiChannelFilter.doFilter(MultiChannelFilter.java:83)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.security.auth.login.LoginFilter.doFilter(LoginFilter.java:133)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:74)
+		at info.magnolia.cms.security.CsrfTokenFilterBase.doFilter(CsrfTokenFilterBase.java:99)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MultipartRequestFilter.doFilter(MultipartRequestFilter.java:164)
+		at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.ContentTypeFilter.doFilter(ContentTypeFilter.java:156)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.ContextFilter.doFilter(ContextFilter.java:128)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.SafeDestroyMgnlFilterWrapper.doFilter(SafeDestroyMgnlFilterWrapper.java:107)
+		at info.magnolia.cms.filters.MgnlFilterDispatcher.doDispatch(MgnlFilterDispatcher.java:67)
+		at info.magnolia.cms.filters.MgnlMainFilter.doFilter(MgnlMainFilter.java:110)
+		at info.magnolia.cms.filters.MgnlMainFilter.doFilter(MgnlMainFilter.java:96)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+	Caused by: org.apache.catalina.connector.ClientAbortException: java.io.IOException: Broken pipe
+		at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:345)
+		at org.apache.catalina.connector.OutputBuffer.appendByteArray(OutputBuffer.java:750)
+		at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:671)
+		at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:380)
+		at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:358)
+		at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:103)
+		at com.vaadin.server.VaadinServlet.streamContent(VaadinServlet.java:1071)
+		at com.vaadin.server.VaadinServlet.writeStaticResourceResponse(VaadinServlet.java:1031)
+		at com.vaadin.server.VaadinServlet.serveStaticResourcesInVAADIN(VaadinServlet.java:928)
+		at com.vaadin.server.VaadinServlet.serveStaticResources(VaadinServlet.java:817)
+		at com.vaadin.server.VaadinServlet.service(VaadinServlet.java:457)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at info.magnolia.cms.filters.ServletDispatchingFilter.doFilter(ServletDispatchingFilter.java:148)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.module.cache.executor.Bypass.processCacheRequest(Bypass.java:58)
+		at info.magnolia.module.cache.executor.CompositeExecutor.processCacheRequest(CompositeExecutor.java:66)
+		at info.magnolia.module.cache.filter.CacheFilter.doFilter(CacheFilter.java:164)
+		... 81 more
+	Caused by: java.io.IOException: Broken pipe
+		at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+		at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:62)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:97)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+		at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+		at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:140)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1428)
+		at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:775)
+		at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:600)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:544)
+		at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:533)
+		at org.apache.coyote.http11.filters.IdentityOutputFilter.doWrite(IdentityOutputFilter.java:73)
+		at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:193)
+		at org.apache.coyote.Response.doWrite(Response.java:613)
+		at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:333)
+		... 106 more
+08-Jun-2024 14:55:55.868 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 14:56:26.961 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 14:57:25.840 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 14:59:36.671 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 15:00:06.428 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 15:11:14.089 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 15:11:44.677 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 17:32:18.427 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 17:32:48.376 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 17:41:59.959 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 17:42:31.061 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 17:42:39.232 SEVERE [main] org.apache.catalina.core.StandardContext.listenerStart Exception sending context initialized event to listener instance of class [info.magnolia.init.MagnoliaServletContextListener]
+	com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: RuntimeException: Something went wrong, version workspace for repository magnolia does not exist.
+  at VersionManager.<init>(VersionManager.java:72)
+  at GuiceComponentConfigurationModule.bindImplementation(GuiceComponentConfigurationModule.java:160)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  while locating VersionManager
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+2) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 1st parameter of TasksStoreImpl.<init>(TasksStoreImpl.java:88) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at TasksStoreImpl.<init>(TasksStoreImpl.java:88)
+      \_ for 1st parameter
+  at TasksStoreImpl.class(TasksStoreImpl.java:75)
+  while locating TasksStoreImpl
+  at DefaultTasksManager.<init>(DefaultTasksManager.java:62)
+      \_ for 1st parameter
+  at DefaultTasksManager.class(DefaultTasksManager.java:62)
+  while locating DefaultTasksManager
+  while locating TasksManager
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+3) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 1st parameter of TasksStoreImpl.<init>(TasksStoreImpl.java:88) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at TasksStoreImpl.<init>(TasksStoreImpl.java:88)
+      \_ for 1st parameter
+  at TasksStoreImpl.class(TasksStoreImpl.java:75)
+  while locating TasksStoreImpl
+  while locating TasksStore
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+4) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 3rd parameter of JackrabbitInitializer.<init>(JackrabbitInitializer.java:124) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at JackrabbitInitializer.<init>(JackrabbitInitializer.java:124)
+      \_ for 3rd parameter
+  at GuiceComponentConfigurationModule.bindImplementation(GuiceComponentConfigurationModule.java:160)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  while locating JackrabbitInitializer
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+5) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 1st parameter of TasksStoreImpl.<init>(TasksStoreImpl.java:88) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at TasksStoreImpl.<init>(TasksStoreImpl.java:88)
+      \_ for 1st parameter
+  at TasksStoreImpl.class(TasksStoreImpl.java:75)
+  while locating TasksStoreImpl
+  at DefaultTasksManager.<init>(DefaultTasksManager.java:62)
+      \_ for 1st parameter
+  at DefaultTasksManager.class(DefaultTasksManager.java:62)
+  while locating DefaultTasksManager
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+6) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 1st parameter of TasksStoreImpl.<init>(TasksStoreImpl.java:88) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at TasksStoreImpl.<init>(TasksStoreImpl.java:88)
+      \_ for 1st parameter
+  at TasksStoreImpl.class(TasksStoreImpl.java:75)
+  while locating TasksStoreImpl
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+6 errors
+
+======================
+Full classname legend:
+======================
+DefaultTasksManager:               "info.magnolia.task.DefaultTasksManager"
+GuiceComponentConfigurationModule: "info.magnolia.objectfactory.guice.GuiceComponentConfigurationModule"
+GuiceComponentProviderBuilder$1:   "info.magnolia.objectfactory.guice.GuiceComponentProviderBuilder$1"
+JackrabbitInitializer:             "info.magnolia.types.datasource.jcr.JackrabbitInitializer"
+Modules$OverrideModule:            "com.google.inject.util.Modules$OverrideModule"
+TasksManager:                      "info.magnolia.task.TasksManager"
+TasksStore:                        "info.magnolia.task.persistence.TasksStore"
+TasksStoreImpl:                    "info.magnolia.task.persistence.TasksStoreImpl"
+VersionManager:                    "info.magnolia.cms.core.version.VersionManager"
+========================
+End of classname legend:
+========================
+
+		at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:576)
+		at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:190)
+		at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:113)
+		at com.google.inject.Guice.createInjector(Guice.java:87)
+		at com.google.inject.Guice.createInjector(Guice.java:78)
+		at info.magnolia.objectfactory.guice.GuiceComponentProviderBuilder.build(GuiceComponentProviderBuilder.java:148)
+		at info.magnolia.objectfactory.guice.GuiceComponentProviderBuilder.build(GuiceComponentProviderBuilder.java:195)
+		at info.magnolia.cms.beans.config.ConfigLoader.load(ConfigLoader.java:142)
+		at info.magnolia.init.MagnoliaServletContextListener$1.doExec(MagnoliaServletContextListener.java:259)
+		at info.magnolia.context.MgnlContext$VoidOp.exec(MgnlContext.java:407)
+		at info.magnolia.context.MgnlContext$VoidOp.exec(MgnlContext.java:404)
+		at info.magnolia.context.MgnlContext.doInSystemContext(MgnlContext.java:378)
+		at info.magnolia.init.MagnoliaServletContextListener.startServer(MagnoliaServletContextListener.java:256)
+		at info.magnolia.init.MagnoliaServletContextListener.contextInitialized(MagnoliaServletContextListener.java:182)
+		at info.magnolia.init.MagnoliaServletContextListener.contextInitialized(MagnoliaServletContextListener.java:128)
+		at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4007)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4448)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:603)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1175)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1888)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1086)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:470)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1584)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:312)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:776)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:721)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:211)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:878)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:735)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.lang.RuntimeException: Something went wrong, version workspace for repository magnolia does not exist.
+		at info.magnolia.cms.core.version.BaseVersionManager.<init>(BaseVersionManager.java:175)
+		at info.magnolia.cms.core.version.VersionManager.<init>(VersionManager.java:72)
+		at info.magnolia.cms.core.version.VersionManager$$FastClassByGuice$$145169512.GUICE$TRAMPOLINE(<generated>)
+		at info.magnolia.cms.core.version.VersionManager$$FastClassByGuice$$145169512.apply(<generated>)
+		at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+		at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+		at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+		at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+		at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+		at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+		at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+		at com.google.inject.internal.InternalInjectorCreator.loadEagerSingletons(InternalInjectorCreator.java:213)
+		at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:186)
+		... 54 more
+08-Jun-2024 17:42:39.251 SEVERE [main] org.apache.catalina.core.StandardContext.listenerStop Exception sending context destroyed event to listener instance of class [info.magnolia.init.MagnoliaServletContextListener]
+	java.lang.IllegalArgumentException: Failed to retrieve repository provider 'magnolia'. Your Magnolia instance might not have been initialized properly.
+		at info.magnolia.repository.WorkspaceMapping.getRepositoryProvider(WorkspaceMapping.java:160)
+		at info.magnolia.repository.DefaultRepositoryManager.shutdown(DefaultRepositoryManager.java:135)
+		at info.magnolia.cms.beans.config.ConfigLoader.unload(ConfigLoader.java:106)
+		at info.magnolia.init.MagnoliaServletContextListener$2.doExec(MagnoliaServletContextListener.java:269)
+		at info.magnolia.context.MgnlContext$VoidOp.exec(MgnlContext.java:407)
+		at info.magnolia.context.MgnlContext$VoidOp.exec(MgnlContext.java:404)
+		at info.magnolia.context.MgnlContext.doInSystemContext(MgnlContext.java:378)
+		at info.magnolia.init.MagnoliaServletContextListener.stopServer(MagnoliaServletContextListener.java:266)
+		at info.magnolia.init.MagnoliaServletContextListener.contextDestroyed(MagnoliaServletContextListener.java:206)
+		at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4053)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4674)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:175)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:603)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1175)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1888)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1086)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:470)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1584)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:312)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:776)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:721)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:211)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:878)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:735)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+08-Jun-2024 17:57:10.227 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 17:57:18.263 SEVERE [main] org.apache.catalina.core.StandardContext.listenerStart Exception sending context initialized event to listener instance of class [info.magnolia.init.MagnoliaServletContextListener]
+	com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: RuntimeException: Something went wrong, version workspace for repository magnolia does not exist.
+  at VersionManager.<init>(VersionManager.java:72)
+  at GuiceComponentConfigurationModule.bindImplementation(GuiceComponentConfigurationModule.java:160)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  while locating VersionManager
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+2) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 1st parameter of TasksStoreImpl.<init>(TasksStoreImpl.java:88) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at TasksStoreImpl.<init>(TasksStoreImpl.java:88)
+      \_ for 1st parameter
+  at TasksStoreImpl.class(TasksStoreImpl.java:75)
+  while locating TasksStoreImpl
+  while locating TasksStore
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+3) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 1st parameter of TasksStoreImpl.<init>(TasksStoreImpl.java:88) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at TasksStoreImpl.<init>(TasksStoreImpl.java:88)
+      \_ for 1st parameter
+  at TasksStoreImpl.class(TasksStoreImpl.java:75)
+  while locating TasksStoreImpl
+  at DefaultTasksManager.<init>(DefaultTasksManager.java:62)
+      \_ for 1st parameter
+  at DefaultTasksManager.class(DefaultTasksManager.java:62)
+  while locating DefaultTasksManager
+  while locating TasksManager
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+4) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 3rd parameter of JackrabbitInitializer.<init>(JackrabbitInitializer.java:124) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at JackrabbitInitializer.<init>(JackrabbitInitializer.java:124)
+      \_ for 3rd parameter
+  at GuiceComponentConfigurationModule.bindImplementation(GuiceComponentConfigurationModule.java:160)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  while locating JackrabbitInitializer
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+5) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 1st parameter of TasksStoreImpl.<init>(TasksStoreImpl.java:88) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at TasksStoreImpl.<init>(TasksStoreImpl.java:88)
+      \_ for 1st parameter
+  at TasksStoreImpl.class(TasksStoreImpl.java:75)
+  while locating TasksStoreImpl
+  at DefaultTasksManager.<init>(DefaultTasksManager.java:62)
+      \_ for 1st parameter
+  at DefaultTasksManager.class(DefaultTasksManager.java:62)
+  while locating DefaultTasksManager
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+6) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 1st parameter of TasksStoreImpl.<init>(TasksStoreImpl.java:88) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at TasksStoreImpl.<init>(TasksStoreImpl.java:88)
+      \_ for 1st parameter
+  at TasksStoreImpl.class(TasksStoreImpl.java:75)
+  while locating TasksStoreImpl
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+6 errors
+
+======================
+Full classname legend:
+======================
+DefaultTasksManager:               "info.magnolia.task.DefaultTasksManager"
+GuiceComponentConfigurationModule: "info.magnolia.objectfactory.guice.GuiceComponentConfigurationModule"
+GuiceComponentProviderBuilder$1:   "info.magnolia.objectfactory.guice.GuiceComponentProviderBuilder$1"
+JackrabbitInitializer:             "info.magnolia.types.datasource.jcr.JackrabbitInitializer"
+Modules$OverrideModule:            "com.google.inject.util.Modules$OverrideModule"
+TasksManager:                      "info.magnolia.task.TasksManager"
+TasksStore:                        "info.magnolia.task.persistence.TasksStore"
+TasksStoreImpl:                    "info.magnolia.task.persistence.TasksStoreImpl"
+VersionManager:                    "info.magnolia.cms.core.version.VersionManager"
+========================
+End of classname legend:
+========================
+
+		at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:576)
+		at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:190)
+		at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:113)
+		at com.google.inject.Guice.createInjector(Guice.java:87)
+		at com.google.inject.Guice.createInjector(Guice.java:78)
+		at info.magnolia.objectfactory.guice.GuiceComponentProviderBuilder.build(GuiceComponentProviderBuilder.java:148)
+		at info.magnolia.objectfactory.guice.GuiceComponentProviderBuilder.build(GuiceComponentProviderBuilder.java:195)
+		at info.magnolia.cms.beans.config.ConfigLoader.load(ConfigLoader.java:142)
+		at info.magnolia.init.MagnoliaServletContextListener$1.doExec(MagnoliaServletContextListener.java:259)
+		at info.magnolia.context.MgnlContext$VoidOp.exec(MgnlContext.java:407)
+		at info.magnolia.context.MgnlContext$VoidOp.exec(MgnlContext.java:404)
+		at info.magnolia.context.MgnlContext.doInSystemContext(MgnlContext.java:378)
+		at info.magnolia.init.MagnoliaServletContextListener.startServer(MagnoliaServletContextListener.java:256)
+		at info.magnolia.init.MagnoliaServletContextListener.contextInitialized(MagnoliaServletContextListener.java:182)
+		at info.magnolia.init.MagnoliaServletContextListener.contextInitialized(MagnoliaServletContextListener.java:128)
+		at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4007)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4448)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:603)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1175)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1888)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1086)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:470)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1584)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:312)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:776)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:721)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:211)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:878)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:735)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.lang.RuntimeException: Something went wrong, version workspace for repository magnolia does not exist.
+		at info.magnolia.cms.core.version.BaseVersionManager.<init>(BaseVersionManager.java:175)
+		at info.magnolia.cms.core.version.VersionManager.<init>(VersionManager.java:72)
+		at info.magnolia.cms.core.version.VersionManager$$FastClassByGuice$$111194331.GUICE$TRAMPOLINE(<generated>)
+		at info.magnolia.cms.core.version.VersionManager$$FastClassByGuice$$111194331.apply(<generated>)
+		at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+		at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+		at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+		at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+		at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+		at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+		at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+		at com.google.inject.internal.InternalInjectorCreator.loadEagerSingletons(InternalInjectorCreator.java:213)
+		at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:186)
+		... 54 more
+08-Jun-2024 17:57:18.281 SEVERE [main] org.apache.catalina.core.StandardContext.listenerStop Exception sending context destroyed event to listener instance of class [info.magnolia.init.MagnoliaServletContextListener]
+	java.lang.IllegalArgumentException: Failed to retrieve repository provider 'magnolia'. Your Magnolia instance might not have been initialized properly.
+		at info.magnolia.repository.WorkspaceMapping.getRepositoryProvider(WorkspaceMapping.java:160)
+		at info.magnolia.repository.DefaultRepositoryManager.shutdown(DefaultRepositoryManager.java:135)
+		at info.magnolia.cms.beans.config.ConfigLoader.unload(ConfigLoader.java:106)
+		at info.magnolia.init.MagnoliaServletContextListener$2.doExec(MagnoliaServletContextListener.java:269)
+		at info.magnolia.context.MgnlContext$VoidOp.exec(MgnlContext.java:407)
+		at info.magnolia.context.MgnlContext$VoidOp.exec(MgnlContext.java:404)
+		at info.magnolia.context.MgnlContext.doInSystemContext(MgnlContext.java:378)
+		at info.magnolia.init.MagnoliaServletContextListener.stopServer(MagnoliaServletContextListener.java:266)
+		at info.magnolia.init.MagnoliaServletContextListener.contextDestroyed(MagnoliaServletContextListener.java:206)
+		at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4053)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4674)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:175)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:603)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1175)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1888)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1086)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:470)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1584)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:312)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:776)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:721)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:211)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:878)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:735)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+08-Jun-2024 17:57:23.955 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 17:58:14.657 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 17:58:44.630 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 17:59:18.278 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [default] in context with path [/magnoliaAuthor] threw exception
+	java.lang.RuntimeException: org.apache.catalina.connector.ClientAbortException: java.io.IOException: Broken pipe
+		at info.magnolia.module.cache.filter.CacheFilter.doFilter(CacheFilter.java:178)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.i18n.I18nContentSupportFilter.doFilter(I18nContentSupportFilter.java:85)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.virtualuri.VirtualUriFilter.doFilter(VirtualUriFilter.java:108)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.RangeSupportFilter.doFilter(RangeSupportFilter.java:79)
+		at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.security.BaseSecurityFilter.doFilter(BaseSecurityFilter.java:57)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cors.AbstractCorsFilter.doFilter(AbstractCorsFilter.java:77)
+		at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59)
+		at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:79)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.security.SecurityCallbackFilter.doFilter(SecurityCallbackFilter.java:85)
+		at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.security.LogoutFilter.doFilter(LogoutFilter.java:110)
+		at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.module.site.filters.SiteMergeFilter.doFilter(SiteMergeFilter.java:115)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MultiChannelFilter.doFilter(MultiChannelFilter.java:83)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.security.auth.login.LoginFilter.doFilter(LoginFilter.java:133)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:74)
+		at info.magnolia.cms.security.CsrfTokenFilterBase.doFilter(CsrfTokenFilterBase.java:99)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MultipartRequestFilter.doFilter(MultipartRequestFilter.java:164)
+		at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.ContentTypeFilter.doFilter(ContentTypeFilter.java:156)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.ContextFilter.doFilter(ContextFilter.java:128)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.SafeDestroyMgnlFilterWrapper.doFilter(SafeDestroyMgnlFilterWrapper.java:107)
+		at info.magnolia.cms.filters.MgnlFilterDispatcher.doDispatch(MgnlFilterDispatcher.java:67)
+		at info.magnolia.cms.filters.MgnlMainFilter.doFilter(MgnlMainFilter.java:110)
+		at info.magnolia.cms.filters.MgnlMainFilter.doFilter(MgnlMainFilter.java:96)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+	Caused by: org.apache.catalina.connector.ClientAbortException: java.io.IOException: Broken pipe
+		at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:345)
+		at org.apache.catalina.connector.OutputBuffer.appendByteArray(OutputBuffer.java:750)
+		at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:671)
+		at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:380)
+		at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:358)
+		at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:103)
+		at com.vaadin.server.VaadinServlet.streamContent(VaadinServlet.java:1071)
+		at com.vaadin.server.VaadinServlet.writeStaticResourceResponse(VaadinServlet.java:1031)
+		at com.vaadin.server.VaadinServlet.serveStaticResourcesInVAADIN(VaadinServlet.java:928)
+		at com.vaadin.server.VaadinServlet.serveStaticResources(VaadinServlet.java:817)
+		at com.vaadin.server.VaadinServlet.service(VaadinServlet.java:457)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at info.magnolia.cms.filters.ServletDispatchingFilter.doFilter(ServletDispatchingFilter.java:148)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.module.cache.executor.Bypass.processCacheRequest(Bypass.java:58)
+		at info.magnolia.module.cache.executor.CompositeExecutor.processCacheRequest(CompositeExecutor.java:66)
+		at info.magnolia.module.cache.filter.CacheFilter.doFilter(CacheFilter.java:164)
+		... 81 more
+	Caused by: java.io.IOException: Broken pipe
+		at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+		at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:62)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:97)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+		at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+		at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:140)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1428)
+		at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:775)
+		at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:600)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:544)
+		at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:533)
+		at org.apache.coyote.http11.filters.IdentityOutputFilter.doWrite(IdentityOutputFilter.java:73)
+		at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:193)
+		at org.apache.coyote.Response.doWrite(Response.java:613)
+		at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:333)
+		... 106 more
+08-Jun-2024 17:59:39.539 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [default] in context with path [/magnoliaAuthor] threw exception
+	com.machinezoo.noexception.WrappedException: javax.jcr.RepositoryException: This repository instance has been shut down.
+		at com.machinezoo.noexception.WrappingHandler.handle(WrappingHandler.java:12)
+		at com.machinezoo.noexception.CheckedExceptionHandler.get(CheckedExceptionHandler.java:1839)
+		at info.magnolia.resourceloader.jcr.JcrResourceOrigin.getJcrSession(JcrResourceOrigin.java:246)
+		at info.magnolia.resourceloader.jcr.JcrResourceOrigin.getNode(JcrResourceOrigin.java:236)
+		at info.magnolia.resourceloader.jcr.JcrResourceOrigin.hasPath(JcrResourceOrigin.java:136)
+		at info.magnolia.resourceloader.layered.LayeredResourceOrigin.lambda$hasPath$2(LayeredResourceOrigin.java:121)
+		at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
+		at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+		at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+		at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
+		at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:632)
+		at info.magnolia.resourceloader.layered.LayeredResourceOrigin.hasPath(LayeredResourceOrigin.java:121)
+		at info.magnolia.config.source.yaml.YamlDefinitionProvider.getDelegate(YamlDefinitionProvider.java:153)
+		at info.magnolia.config.registry.AbstractDefinitionProviderWrapper.isValid(AbstractDefinitionProviderWrapper.java:71)
+		at info.magnolia.config.registry.AbstractRegistry.lambda$getAllProviders$1(AbstractRegistry.java:155)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+		at java.base/java.util.concurrent.ConcurrentHashMap$ValueSpliterator.forEachRemaining(ConcurrentHashMap.java:3612)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+		at info.magnolia.config.registry.AbstractRegistry.getAllProviders(AbstractRegistry.java:157)
+		at info.magnolia.config.registry.AbstractRegistry.getAllDefinitions(AbstractRegistry.java:167)
+		at info.magnolia.virtualuri.VirtualUriFilter.doFilter(VirtualUriFilter.java:97)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.RangeSupportFilter.doFilter(RangeSupportFilter.java:79)
+		at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.security.BaseSecurityFilter.doFilter(BaseSecurityFilter.java:57)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cors.AbstractCorsFilter.doFilter(AbstractCorsFilter.java:77)
+		at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59)
+		at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:79)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.security.SecurityCallbackFilter.doFilter(SecurityCallbackFilter.java:85)
+		at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.security.LogoutFilter.doFilter(LogoutFilter.java:110)
+		at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.module.site.filters.SiteMergeFilter.doFilter(SiteMergeFilter.java:115)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MultiChannelFilter.doFilter(MultiChannelFilter.java:83)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.security.auth.login.LoginFilter.doFilter(LoginFilter.java:133)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:74)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.ContentTypeFilter.doFilter(ContentTypeFilter.java:156)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.ContextFilter.doFilter(ContextFilter.java:128)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.SafeDestroyMgnlFilterWrapper.doFilter(SafeDestroyMgnlFilterWrapper.java:107)
+		at info.magnolia.cms.filters.MgnlFilterDispatcher.doDispatch(MgnlFilterDispatcher.java:67)
+		at info.magnolia.cms.filters.MgnlMainFilter.doFilter(MgnlMainFilter.java:110)
+		at info.magnolia.cms.filters.MgnlMainFilter.doFilter(MgnlMainFilter.java:96)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+	Caused by: javax.jcr.RepositoryException: This repository instance has been shut down.
+		at org.apache.jackrabbit.core.RepositoryImpl.sanityCheck(RepositoryImpl.java:629)
+		at org.apache.jackrabbit.core.RepositoryImpl.login(RepositoryImpl.java:1477)
+		at org.apache.jackrabbit.core.jndi.BindableRepository.login(BindableRepository.java:162)
+		at info.magnolia.jackrabbit.ProviderImpl.login(ProviderImpl.java:570)
+		at info.magnolia.jackrabbit.ProviderImpl.getSystemSession(ProviderImpl.java:561)
+		at info.magnolia.repository.DefaultRepositoryManager.getSystemSession(DefaultRepositoryManager.java:327)
+		at info.magnolia.context.SystemRepositoryStrategy.internalGetSession(SystemRepositoryStrategy.java:71)
+		at info.magnolia.context.AbstractRepositoryStrategy.getSession(AbstractRepositoryStrategy.java:75)
+		at info.magnolia.context.AbstractContext.getJCRSession(AbstractContext.java:124)
+		at info.magnolia.resourceloader.jcr.JcrResourceOrigin.lambda$getJcrSession$14(JcrResourceOrigin.java:246)
+		at com.machinezoo.noexception.CheckedExceptionHandler.get(CheckedExceptionHandler.java:1835)
+		... 99 more
+08-Jun-2024 18:02:04.843 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 18:02:34.927 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 18:02:42.624 SEVERE [main] org.apache.catalina.core.StandardContext.listenerStart Exception sending context initialized event to listener instance of class [info.magnolia.init.MagnoliaServletContextListener]
+	com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: RuntimeException: Something went wrong, version workspace for repository magnolia does not exist.
+  at VersionManager.<init>(VersionManager.java:72)
+  at GuiceComponentConfigurationModule.bindImplementation(GuiceComponentConfigurationModule.java:160)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  while locating VersionManager
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+2) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 1st parameter of TasksStoreImpl.<init>(TasksStoreImpl.java:88) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at TasksStoreImpl.<init>(TasksStoreImpl.java:88)
+      \_ for 1st parameter
+  at TasksStoreImpl.class(TasksStoreImpl.java:75)
+  while locating TasksStoreImpl
+  at DefaultTasksManager.<init>(DefaultTasksManager.java:62)
+      \_ for 1st parameter
+  at DefaultTasksManager.class(DefaultTasksManager.java:62)
+  while locating DefaultTasksManager
+  while locating TasksManager
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+3) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 1st parameter of TasksStoreImpl.<init>(TasksStoreImpl.java:88) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at TasksStoreImpl.<init>(TasksStoreImpl.java:88)
+      \_ for 1st parameter
+  at TasksStoreImpl.class(TasksStoreImpl.java:75)
+  while locating TasksStoreImpl
+  while locating TasksStore
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+4) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 3rd parameter of JackrabbitInitializer.<init>(JackrabbitInitializer.java:124) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at JackrabbitInitializer.<init>(JackrabbitInitializer.java:124)
+      \_ for 3rd parameter
+  at GuiceComponentConfigurationModule.bindImplementation(GuiceComponentConfigurationModule.java:160)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  while locating JackrabbitInitializer
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+5) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 1st parameter of TasksStoreImpl.<init>(TasksStoreImpl.java:88) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at TasksStoreImpl.<init>(TasksStoreImpl.java:88)
+      \_ for 1st parameter
+  at TasksStoreImpl.class(TasksStoreImpl.java:75)
+  while locating TasksStoreImpl
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+6) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 1st parameter of TasksStoreImpl.<init>(TasksStoreImpl.java:88) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at TasksStoreImpl.<init>(TasksStoreImpl.java:88)
+      \_ for 1st parameter
+  at TasksStoreImpl.class(TasksStoreImpl.java:75)
+  while locating TasksStoreImpl
+  at DefaultTasksManager.<init>(DefaultTasksManager.java:62)
+      \_ for 1st parameter
+  at DefaultTasksManager.class(DefaultTasksManager.java:62)
+  while locating DefaultTasksManager
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+6 errors
+
+======================
+Full classname legend:
+======================
+DefaultTasksManager:               "info.magnolia.task.DefaultTasksManager"
+GuiceComponentConfigurationModule: "info.magnolia.objectfactory.guice.GuiceComponentConfigurationModule"
+GuiceComponentProviderBuilder$1:   "info.magnolia.objectfactory.guice.GuiceComponentProviderBuilder$1"
+JackrabbitInitializer:             "info.magnolia.types.datasource.jcr.JackrabbitInitializer"
+Modules$OverrideModule:            "com.google.inject.util.Modules$OverrideModule"
+TasksManager:                      "info.magnolia.task.TasksManager"
+TasksStore:                        "info.magnolia.task.persistence.TasksStore"
+TasksStoreImpl:                    "info.magnolia.task.persistence.TasksStoreImpl"
+VersionManager:                    "info.magnolia.cms.core.version.VersionManager"
+========================
+End of classname legend:
+========================
+
+		at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:576)
+		at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:190)
+		at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:113)
+		at com.google.inject.Guice.createInjector(Guice.java:87)
+		at com.google.inject.Guice.createInjector(Guice.java:78)
+		at info.magnolia.objectfactory.guice.GuiceComponentProviderBuilder.build(GuiceComponentProviderBuilder.java:148)
+		at info.magnolia.objectfactory.guice.GuiceComponentProviderBuilder.build(GuiceComponentProviderBuilder.java:195)
+		at info.magnolia.cms.beans.config.ConfigLoader.load(ConfigLoader.java:142)
+		at info.magnolia.init.MagnoliaServletContextListener$1.doExec(MagnoliaServletContextListener.java:259)
+		at info.magnolia.context.MgnlContext$VoidOp.exec(MgnlContext.java:407)
+		at info.magnolia.context.MgnlContext$VoidOp.exec(MgnlContext.java:404)
+		at info.magnolia.context.MgnlContext.doInSystemContext(MgnlContext.java:378)
+		at info.magnolia.init.MagnoliaServletContextListener.startServer(MagnoliaServletContextListener.java:256)
+		at info.magnolia.init.MagnoliaServletContextListener.contextInitialized(MagnoliaServletContextListener.java:182)
+		at info.magnolia.init.MagnoliaServletContextListener.contextInitialized(MagnoliaServletContextListener.java:128)
+		at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4007)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4448)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:603)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1175)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1888)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1086)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:470)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1584)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:312)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:776)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:721)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:211)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:878)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:735)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.lang.RuntimeException: Something went wrong, version workspace for repository magnolia does not exist.
+		at info.magnolia.cms.core.version.BaseVersionManager.<init>(BaseVersionManager.java:175)
+		at info.magnolia.cms.core.version.VersionManager.<init>(VersionManager.java:72)
+		at info.magnolia.cms.core.version.VersionManager$$FastClassByGuice$$103123719.GUICE$TRAMPOLINE(<generated>)
+		at info.magnolia.cms.core.version.VersionManager$$FastClassByGuice$$103123719.apply(<generated>)
+		at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+		at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+		at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+		at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+		at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+		at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+		at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+		at com.google.inject.internal.InternalInjectorCreator.loadEagerSingletons(InternalInjectorCreator.java:213)
+		at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:186)
+		... 54 more
+08-Jun-2024 18:02:42.643 SEVERE [main] org.apache.catalina.core.StandardContext.listenerStop Exception sending context destroyed event to listener instance of class [info.magnolia.init.MagnoliaServletContextListener]
+	java.lang.IllegalArgumentException: Failed to retrieve repository provider 'magnolia'. Your Magnolia instance might not have been initialized properly.
+		at info.magnolia.repository.WorkspaceMapping.getRepositoryProvider(WorkspaceMapping.java:160)
+		at info.magnolia.repository.DefaultRepositoryManager.shutdown(DefaultRepositoryManager.java:135)
+		at info.magnolia.cms.beans.config.ConfigLoader.unload(ConfigLoader.java:106)
+		at info.magnolia.init.MagnoliaServletContextListener$2.doExec(MagnoliaServletContextListener.java:269)
+		at info.magnolia.context.MgnlContext$VoidOp.exec(MgnlContext.java:407)
+		at info.magnolia.context.MgnlContext$VoidOp.exec(MgnlContext.java:404)
+		at info.magnolia.context.MgnlContext.doInSystemContext(MgnlContext.java:378)
+		at info.magnolia.init.MagnoliaServletContextListener.stopServer(MagnoliaServletContextListener.java:266)
+		at info.magnolia.init.MagnoliaServletContextListener.contextDestroyed(MagnoliaServletContextListener.java:206)
+		at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4053)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4674)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:175)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:603)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1175)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1888)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1086)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:470)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1584)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:312)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:776)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:721)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:211)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:878)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:735)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+08-Jun-2024 18:26:25.284 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 18:26:56.257 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 19:00:14.411 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 19:00:21.961 SEVERE [main] org.apache.catalina.core.StandardContext.listenerStart Exception sending context initialized event to listener instance of class [info.magnolia.init.MagnoliaServletContextListener]
+	com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: RuntimeException: Something went wrong, version workspace for repository magnolia does not exist.
+  at VersionManager.<init>(VersionManager.java:72)
+  at GuiceComponentConfigurationModule.bindImplementation(GuiceComponentConfigurationModule.java:160)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  while locating VersionManager
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+2) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 1st parameter of TasksStoreImpl.<init>(TasksStoreImpl.java:88) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at TasksStoreImpl.<init>(TasksStoreImpl.java:88)
+      \_ for 1st parameter
+  at TasksStoreImpl.class(TasksStoreImpl.java:75)
+  while locating TasksStoreImpl
+  while locating TasksStore
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+3) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 1st parameter of TasksStoreImpl.<init>(TasksStoreImpl.java:88) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at TasksStoreImpl.<init>(TasksStoreImpl.java:88)
+      \_ for 1st parameter
+  at TasksStoreImpl.class(TasksStoreImpl.java:75)
+  while locating TasksStoreImpl
+  at DefaultTasksManager.<init>(DefaultTasksManager.java:62)
+      \_ for 1st parameter
+  at DefaultTasksManager.class(DefaultTasksManager.java:62)
+  while locating DefaultTasksManager
+  while locating TasksManager
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+4) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 3rd parameter of JackrabbitInitializer.<init>(JackrabbitInitializer.java:124) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at JackrabbitInitializer.<init>(JackrabbitInitializer.java:124)
+      \_ for 3rd parameter
+  at GuiceComponentConfigurationModule.bindImplementation(GuiceComponentConfigurationModule.java:160)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  while locating JackrabbitInitializer
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+5) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 1st parameter of TasksStoreImpl.<init>(TasksStoreImpl.java:88) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at TasksStoreImpl.<init>(TasksStoreImpl.java:88)
+      \_ for 1st parameter
+  at TasksStoreImpl.class(TasksStoreImpl.java:75)
+  while locating TasksStoreImpl
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+6) [Guice/NullInjectedIntoNonNullable]: null returned by binding at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181) (installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule)
+ but the 1st parameter of TasksStoreImpl.<init>(TasksStoreImpl.java:88) is not @Nullable
+  at GuiceComponentConfigurationModule.bindProvider(GuiceComponentConfigurationModule.java:181)
+      \_ installed by: Modules$OverrideModule -> Modules$OverrideModule -> GuiceComponentProviderBuilder$1 -> GuiceComponentConfigurationModule
+  at TasksStoreImpl.<init>(TasksStoreImpl.java:88)
+      \_ for 1st parameter
+  at TasksStoreImpl.class(TasksStoreImpl.java:75)
+  while locating TasksStoreImpl
+  at DefaultTasksManager.<init>(DefaultTasksManager.java:62)
+      \_ for 1st parameter
+  at DefaultTasksManager.class(DefaultTasksManager.java:62)
+  while locating DefaultTasksManager
+
+Learn more:
+  https://github.com/google/guice/wiki/NULL_INJECTED_INTO_NON_NULLABLE
+
+6 errors
+
+======================
+Full classname legend:
+======================
+DefaultTasksManager:               "info.magnolia.task.DefaultTasksManager"
+GuiceComponentConfigurationModule: "info.magnolia.objectfactory.guice.GuiceComponentConfigurationModule"
+GuiceComponentProviderBuilder$1:   "info.magnolia.objectfactory.guice.GuiceComponentProviderBuilder$1"
+JackrabbitInitializer:             "info.magnolia.types.datasource.jcr.JackrabbitInitializer"
+Modules$OverrideModule:            "com.google.inject.util.Modules$OverrideModule"
+TasksManager:                      "info.magnolia.task.TasksManager"
+TasksStore:                        "info.magnolia.task.persistence.TasksStore"
+TasksStoreImpl:                    "info.magnolia.task.persistence.TasksStoreImpl"
+VersionManager:                    "info.magnolia.cms.core.version.VersionManager"
+========================
+End of classname legend:
+========================
+
+		at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:576)
+		at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:190)
+		at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:113)
+		at com.google.inject.Guice.createInjector(Guice.java:87)
+		at com.google.inject.Guice.createInjector(Guice.java:78)
+		at info.magnolia.objectfactory.guice.GuiceComponentProviderBuilder.build(GuiceComponentProviderBuilder.java:148)
+		at info.magnolia.objectfactory.guice.GuiceComponentProviderBuilder.build(GuiceComponentProviderBuilder.java:195)
+		at info.magnolia.cms.beans.config.ConfigLoader.load(ConfigLoader.java:142)
+		at info.magnolia.init.MagnoliaServletContextListener$1.doExec(MagnoliaServletContextListener.java:259)
+		at info.magnolia.context.MgnlContext$VoidOp.exec(MgnlContext.java:407)
+		at info.magnolia.context.MgnlContext$VoidOp.exec(MgnlContext.java:404)
+		at info.magnolia.context.MgnlContext.doInSystemContext(MgnlContext.java:378)
+		at info.magnolia.init.MagnoliaServletContextListener.startServer(MagnoliaServletContextListener.java:256)
+		at info.magnolia.init.MagnoliaServletContextListener.contextInitialized(MagnoliaServletContextListener.java:182)
+		at info.magnolia.init.MagnoliaServletContextListener.contextInitialized(MagnoliaServletContextListener.java:128)
+		at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4007)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4448)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:603)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1175)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1888)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1086)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:470)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1584)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:312)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:776)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:721)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:211)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:878)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:735)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.lang.RuntimeException: Something went wrong, version workspace for repository magnolia does not exist.
+		at info.magnolia.cms.core.version.BaseVersionManager.<init>(BaseVersionManager.java:175)
+		at info.magnolia.cms.core.version.VersionManager.<init>(VersionManager.java:72)
+		at info.magnolia.cms.core.version.VersionManager$$FastClassByGuice$$72041420.GUICE$TRAMPOLINE(<generated>)
+		at info.magnolia.cms.core.version.VersionManager$$FastClassByGuice$$72041420.apply(<generated>)
+		at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+		at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+		at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+		at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+		at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+		at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+		at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+		at com.google.inject.internal.InternalInjectorCreator.loadEagerSingletons(InternalInjectorCreator.java:213)
+		at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:186)
+		... 54 more
+08-Jun-2024 19:00:21.972 SEVERE [main] org.apache.catalina.core.StandardContext.listenerStop Exception sending context destroyed event to listener instance of class [info.magnolia.init.MagnoliaServletContextListener]
+	java.lang.IllegalArgumentException: Failed to retrieve repository provider 'magnolia'. Your Magnolia instance might not have been initialized properly.
+		at info.magnolia.repository.WorkspaceMapping.getRepositoryProvider(WorkspaceMapping.java:160)
+		at info.magnolia.repository.DefaultRepositoryManager.shutdown(DefaultRepositoryManager.java:135)
+		at info.magnolia.cms.beans.config.ConfigLoader.unload(ConfigLoader.java:106)
+		at info.magnolia.init.MagnoliaServletContextListener$2.doExec(MagnoliaServletContextListener.java:269)
+		at info.magnolia.context.MgnlContext$VoidOp.exec(MgnlContext.java:407)
+		at info.magnolia.context.MgnlContext$VoidOp.exec(MgnlContext.java:404)
+		at info.magnolia.context.MgnlContext.doInSystemContext(MgnlContext.java:378)
+		at info.magnolia.init.MagnoliaServletContextListener.stopServer(MagnoliaServletContextListener.java:266)
+		at info.magnolia.init.MagnoliaServletContextListener.contextDestroyed(MagnoliaServletContextListener.java:206)
+		at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4053)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4674)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:175)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:603)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1175)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1888)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1086)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:470)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1584)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:312)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:776)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:721)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:211)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:878)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:735)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+08-Jun-2024 19:00:27.467 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 19:01:55.994 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 19:02:26.718 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 23:34:34.730 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 23:35:06.330 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 23:35:41.700 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [default] in context with path [/magnoliaPublic] threw exception
+	java.lang.NullPointerException: Cannot invoke "info.magnolia.cms.security.User.getAllRoles()" because "user" is null
+		at info.magnolia.cms.security.SecurityUtil.createSubjectAndPopulate(SecurityUtil.java:496)
+		at info.magnolia.cms.security.SystemUserManager.getAnonymousSubject(SystemUserManager.java:143)
+		at info.magnolia.cms.security.Security.getAnonymousSubject(Security.java:91)
+		at info.magnolia.context.UserContextImpl.getSubject(UserContextImpl.java:104)
+		at info.magnolia.context.UserContextImpl.getUser(UserContextImpl.java:84)
+		at info.magnolia.context.MgnlContext.getUser(MgnlContext.java:91)
+		at info.magnolia.cms.security.SecurityUtil.isAuthenticated(SecurityUtil.java:129)
+		at info.magnolia.cms.security.CsrfCookieTokenFilter.bypasses(CsrfCookieTokenFilter.java:78)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.matches(AbstractMgnlFilter.java:92)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:78)
+		at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MultipartRequestFilter.doFilter(MultipartRequestFilter.java:164)
+		at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.ContentTypeFilter.doFilter(ContentTypeFilter.java:156)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.ContextFilter.doFilter(ContextFilter.java:128)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.SafeDestroyMgnlFilterWrapper.doFilter(SafeDestroyMgnlFilterWrapper.java:107)
+		at info.magnolia.cms.filters.MgnlFilterDispatcher.doDispatch(MgnlFilterDispatcher.java:67)
+		at info.magnolia.cms.filters.MgnlMainFilter.doFilter(MgnlMainFilter.java:110)
+		at info.magnolia.cms.filters.MgnlMainFilter.doFilter(MgnlMainFilter.java:96)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+08-Jun-2024 23:36:11.487 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [default] in context with path [/magnoliaPublic] threw exception
+	java.lang.NullPointerException: Cannot invoke "info.magnolia.cms.security.User.getAllRoles()" because "user" is null
+		at info.magnolia.cms.security.SecurityUtil.createSubjectAndPopulate(SecurityUtil.java:496)
+		at info.magnolia.cms.security.SystemUserManager.getAnonymousSubject(SystemUserManager.java:143)
+		at info.magnolia.cms.security.Security.getAnonymousSubject(Security.java:91)
+		at info.magnolia.context.UserContextImpl.getSubject(UserContextImpl.java:104)
+		at info.magnolia.context.UserContextImpl.getUser(UserContextImpl.java:84)
+		at info.magnolia.context.MgnlContext.getUser(MgnlContext.java:91)
+		at info.magnolia.cms.security.SecurityUtil.isAuthenticated(SecurityUtil.java:129)
+		at info.magnolia.cms.security.CsrfCookieTokenFilter.bypasses(CsrfCookieTokenFilter.java:78)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.matches(AbstractMgnlFilter.java:92)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:78)
+		at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81)
+		at info.magnolia.cms.filters.ContentTypeFilter.doFilter(ContentTypeFilter.java:156)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.ContextFilter.doFilter(ContextFilter.java:128)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79)
+		at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75)
+		at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85)
+		at info.magnolia.cms.filters.SafeDestroyMgnlFilterWrapper.doFilter(SafeDestroyMgnlFilterWrapper.java:107)
+		at info.magnolia.cms.filters.MgnlFilterDispatcher.doDispatch(MgnlFilterDispatcher.java:67)
+		at info.magnolia.cms.filters.MgnlMainFilter.doFilter(MgnlMainFilter.java:110)
+		at info.magnolia.cms.filters.MgnlMainFilter.doFilter(MgnlMainFilter.java:96)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+08-Jun-2024 23:50:01.840 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework
+08-Jun-2024 23:50:21.410 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing AtmosphereFramework

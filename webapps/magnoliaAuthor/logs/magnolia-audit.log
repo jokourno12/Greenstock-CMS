@@ -1,0 +1,1 @@
+09.06.2024 07:09:09, security, anonymous, 127.0.0.1, Possible CSRF Attack, CSRF token not set while user 'anonymous' attempted to access url '/.magnolia/admincentral'.
