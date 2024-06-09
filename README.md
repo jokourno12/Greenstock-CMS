@@ -77,3 +77,31 @@ instructions for reporting a bug
 ### Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for more info.
+
+
+# Command
+1. install JRE or JDK
+2. download Magnolia CE: https://nexus.magnolia-cms.com/repository/public/info/magnolia/bundle/magnolia-community-demo-webapp/6.2.45/magnolia-community-demo-webapp-6.2.45-tomcat-bundle.zip?_gl=1*u80bck*_gcl_au*MTc4NjAzOTY1OC4xNzE3ODE4NjI2*_ga*ODYyODU0NzY5LjE3MTc4MTE4MDI.*_ga_61HQH88LT4*MTcxNzgxODYyNS4yLjEuMTcxNzgxODYzMS41NC4wLjA.
+3. extract file
+4. cd to path apache-tomcat-x.y/bin
+5. open terminal:
+   - ./magnolia_control.sh start --ignore-open-files-limit
+6. open http://localhost:8080
+7. database configuration (magnoliaAuthor example):
+   - update webapps/magnoliaAuthor/WEB-INF/config/repo-conf: choose database
+   - update webapps/magnoliaAuthor/WEB-INF/config/default: magnolia.properties
+   - update webapps/magnoliaAuthor/repositories/magnolia/workspaces-*
+   - makesure database connector present in webapps/magnoliaAuthor/WEB-INF/lib
+   - similar for magnoliaPublic
+9. re-running magnolia cms
+10. create Dockerfile
+11. docker build -t greenstock_cms .
+12. docker run --network host -d greenstock_cms
+
+# Architecture
+1. Operation Excellence
+2. Security
+3. Reliability
+4. Performance Efficiency
+5. Cost Optimization
+6. Sustainability
